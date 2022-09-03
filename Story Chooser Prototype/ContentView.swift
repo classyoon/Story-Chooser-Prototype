@@ -8,11 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var thing = 0
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        NavigationView{
+            List{
+               
+                Stepper("Enter your number : \(thing)", onIncrement: {
+                    thing += 1
+                }, onDecrement: {
+                    thing -= 1
+                })
+                Text("Hello, world!")
+                    .padding()
+                NavigationLink {
+                    Stage1()
+                } label: {
+                    Text("Progress")
+                }
+            }
+        }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
