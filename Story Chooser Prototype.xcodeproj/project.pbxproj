@@ -12,6 +12,9 @@
 		CAB5FA7928C0FFAA00B0CE39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB5FA7828C0FFAA00B0CE39 /* Assets.xcassets */; };
 		CAB5FA7C28C0FFAA00B0CE39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB5FA7B28C0FFAA00B0CE39 /* Preview Assets.xcassets */; };
 		CAB70B5928C3FF030090A7E0 /* Stage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB70B5828C3FF030090A7E0 /* Stage1.swift */; };
+		CAB70B5B28C40F750090A7E0 /* Stage1 Bow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB70B5A28C40F750090A7E0 /* Stage1 Bow.swift */; };
+		CAB70B5D28C4186C0090A7E0 /* Defeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB70B5C28C4186C0090A7E0 /* Defeat.swift */; };
+		CAB70B5F28C4188B0090A7E0 /* Victory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB70B5E28C4188B0090A7E0 /* Victory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		CAB5FA7828C0FFAA00B0CE39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAB5FA7B28C0FFAA00B0CE39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CAB70B5828C3FF030090A7E0 /* Stage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage1.swift; sourceTree = "<group>"; };
+		CAB70B5A28C40F750090A7E0 /* Stage1 Bow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stage1 Bow.swift"; sourceTree = "<group>"; };
+		CAB70B5C28C4186C0090A7E0 /* Defeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defeat.swift; sourceTree = "<group>"; };
+		CAB70B5E28C4188B0090A7E0 /* Victory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Victory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 				CAB5FA7428C0FFA800B0CE39 /* Story_Chooser_PrototypeApp.swift */,
 				CAB5FA7628C0FFA800B0CE39 /* ContentView.swift */,
 				CAB70B5828C3FF030090A7E0 /* Stage1.swift */,
+				CAB70B5A28C40F750090A7E0 /* Stage1 Bow.swift */,
+				CAB70B5C28C4186C0090A7E0 /* Defeat.swift */,
+				CAB70B5E28C4188B0090A7E0 /* Victory.swift */,
 				CAB5FA7828C0FFAA00B0CE39 /* Assets.xcassets */,
 				CAB5FA7A28C0FFAA00B0CE39 /* Preview Content */,
 			);
@@ -140,8 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAB70B5D28C4186C0090A7E0 /* Defeat.swift in Sources */,
+				CAB70B5B28C40F750090A7E0 /* Stage1 Bow.swift in Sources */,
 				CAB5FA7728C0FFA800B0CE39 /* ContentView.swift in Sources */,
 				CAB70B5928C3FF030090A7E0 /* Stage1.swift in Sources */,
+				CAB70B5F28C4188B0090A7E0 /* Victory.swift in Sources */,
 				CAB5FA7528C0FFA800B0CE39 /* Story_Chooser_PrototypeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
