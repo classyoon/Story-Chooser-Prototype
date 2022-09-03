@@ -64,7 +64,7 @@ struct ContentView: View {
                     }
 
                 }
-                Section("Choose your own adventure"){
+                Section("Choose your own adventure 👑"){
                     Text("You are a dog owner armed with a sword and bow. You were returning from the store with dog food when you are confronted by a big monster. You must fight...")
                         .padding()
                 

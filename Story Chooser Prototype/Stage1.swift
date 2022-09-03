@@ -22,6 +22,7 @@ struct Stage1Sword: View {
 
     var body: some View {
         VStack{
+            Text("🗡").font(.title)
             Text(result).padding()
             NavigationLink {
                 determineOutCome()

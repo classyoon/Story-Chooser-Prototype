@@ -23,6 +23,7 @@ struct Stage1_Bow: View {
     }
     var body: some View {
         VStack{
+            Text("🏹").font(.title)
             Text(result).padding()
             NavigationLink {
                 determineOutCome()

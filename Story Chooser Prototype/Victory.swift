@@ -10,8 +10,8 @@ import SwiftUI
 struct Victory: View {
     var body: some View {
         List{
-            Text("Good Ending").font(.title)
-                 Text("Victorious, you make it home to your dog. 🐶. Doggo is very happy!!!!!")
+            Text("Good Ending ❤️🐶❤️").font(.title)
+                 Text("Victorious, you make it home to your dog. 🐶 Doggo is very happy!!!!!")
             NavigationLink {
                 ContentView()
             } label: {

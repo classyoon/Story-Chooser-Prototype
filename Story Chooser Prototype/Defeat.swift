@@ -10,7 +10,7 @@ import SwiftUI
 struct Defeat: View {
     var body: some View {
         List{
-            Text("Bad Ending").font(.title)
+            Text("Bad Ending 😭").font(.title)
             Text("You were defeated and had to run. You made it home, but you left the doggo food. Your doggo goes hungry")
             NavigationLink {
                 ContentView()
