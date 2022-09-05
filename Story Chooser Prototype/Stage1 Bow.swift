@@ -9,12 +9,12 @@ import SwiftUI
 var successfulBowStage1 = "Your arrow flies true and strikes the enemy"
 var failedBowStage1 = "Your arrow wobbles through the air before landing harmlessly on the ground in front of the enemy"
 struct Stage1_Bow: View {
+    @EnvironmentObject var vm: SkillsViewModel
     
-    
-    @State var result = bowSkill >= 1 ? successfulBowStage1 : failedBowStage1
+//    @State var result = vm.bowSkill >= 1 ? successfulBowStage1 : failedBowStage1
     @ViewBuilder
     func determineOutCome() -> some View{
-        if bowSkill >= 1{
+        if vm.bowSkill >= 1{
             Victory()
         }
         else{
@@ -24,7 +24,7 @@ struct Stage1_Bow: View {
     var body: some View {
         VStack{
             Text("🏹").font(.title)
-            Text(result).padding()
+            Text(vm.bowResultString).padding()
             NavigationLink {
                 determineOutCome()
             } label: {
@@ -38,5 +38,6 @@ struct Stage1_Bow: View {
 struct Stage1_Bow_Previews: PreviewProvider {
     static var previews: some View {
         Stage1_Bow()
+            .environmentObject(SkillsViewModel())
     }
 }

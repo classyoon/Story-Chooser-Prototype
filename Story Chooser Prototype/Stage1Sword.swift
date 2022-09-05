@@ -6,13 +6,13 @@
 //
 
 import SwiftUI
-var successfulSwordStage1 = "Your sword deftly cleaves the enemy in two"
-var failedSwordStage1 = "Your clumsy sword stroke glances off the armor of your enemy"
+
 struct Stage1Sword: View {
-    @State var result = swordSkill >= 1 ? successfulSwordStage1 : failedSwordStage1
+    @EnvironmentObject var vm : SkillsViewModel
+
     @ViewBuilder
     func determineOutCome() -> some View{
-        if swordSkill >= 1{
+        if vm.swordWinCondition {
             Victory()
         }
         else{
@@ -23,7 +23,7 @@ struct Stage1Sword: View {
     var body: some View {
         VStack{
             Text("🗡").font(.title)
-            Text(result).padding()
+            Text(vm.bowResultString).padding()
             NavigationLink {
                 determineOutCome()
             } label: {
@@ -37,5 +37,6 @@ struct Stage1Sword: View {
 struct Stage1Sword_Previews: PreviewProvider {
     static var previews: some View {
         Stage1Sword()
+            .environmentObject(SkillsViewModel())
     }
 }

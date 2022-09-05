@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct Story_Chooser_PrototypeApp: App {
+    @StateObject var skillsVM = SkillsViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(skillsVM)
         }
     }
 }
+/**
+ NAVIGATION STACK
+ */
