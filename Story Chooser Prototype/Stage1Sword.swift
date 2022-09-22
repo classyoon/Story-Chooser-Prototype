@@ -12,7 +12,7 @@ struct Stage1Sword: View {
 
     @ViewBuilder
     func determineOutCome() -> some View{
-        if vm.swordWinCondition {
+        if vm.swordSkill >= 1 {
             Victory()
         }
         else{
